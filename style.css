@@ -14,6 +14,10 @@ color:rgb(80, 99,128);
 }
 .section{ background-color:#5c99b7;
            height: 50px;
+           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
+           
+        
+           
            
         }
 
@@ -32,9 +36,10 @@ margin-left: 50px;
 }
 
 .section2{ padding-left: 400px;
-    background-color: rgb(240, 227, 210);
+    background-color: rgb(241, 237, 231);
     padding-bottom: 200px;
     height: 450px;
+    
     }
 
 .img1{ margin-right:200px;}
@@ -99,7 +104,7 @@ padding: 10px;}
         background-color: rgba(255, 255, 255, 0.8);
         padding: 26px;
        text-align: center;
-       opacity: 0.5;
+       opacity: 0.7;
       }
 
       .grid-item:hover {
@@ -127,7 +132,7 @@ height: 350px;}
 /* section6 */
 
 .section6{ text-align: center;
-    background-color: rgb(240, 227, 210);
+    background-color: rgb(241, 237, 231);
     height: 400px;
                                }
 
@@ -139,7 +144,7 @@ height: 350px;}
 .grid-item2 {
         padding: 20px;
         text-align: center;
-        
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5) ;
                 }
 
 .spo{ width: 200px;
@@ -159,6 +164,7 @@ height: 255px;}
 
 .grid-item3{
         padding: 60px;
+        color:rgb(20, 110, 146);
                 }
 
                 /* section9 */
