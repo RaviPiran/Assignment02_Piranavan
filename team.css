@@ -25,7 +25,7 @@
         }
 
         .head2{ float:right;
-        padding-right: 450px;
+        padding-right: 350px;
     margin-top:5px; }
 
     /* section1 */
@@ -43,11 +43,12 @@
 
     .img1{  width: 600px;
             height: 600px;
-            margin-right: 50px;           }
+            margin-right: 50px;           
+        }
 
     .tab2{ padding-left: 30px;
     padding-top: 30px;
-    /* border: 3px solid black; */
+    background-color: rgb(235, 231, 226);
     width: 400px;
     height: 150px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5) ; 
@@ -56,6 +57,9 @@
     .tab3{ padding-left: 20px;
         padding-bottom: 60px;
         padding-top: 10px;
+        
+        
+        
         }
 
         
