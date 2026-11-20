@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SL Cricket</title>
+    <title>SL Cricket - Yarl Cric</title>
+    <!-- Bootstrap CSS -->
+    <link href="./Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Team Page Stylesheet -->
     <link rel="stylesheet" href="team.css">
-    <link href="./Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
 </head>
-<fieldset class="field">
 <body>
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Nav Bar -->
     <section>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="mainNavbar">
           <div class="container-fluid section">
-            <a class="navbar-brand two" href="#">Yarl Cric</a>
-            <img src="./Assets/images/download-removebg-preview.png" alt="Yarl cric" width="80px" height="60px">
+            <a class="navbar-brand two" href="index.html">
+              <img src="./Assets/images/download-removebg-preview.png" class="brand-logo-img" alt="Yarl cric">
+              <span>Yarl Cric</span>
+            </a>
     
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -24,112 +34,193 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ms-auto one">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="index.html#formats">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="index.html#services">Services</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Booking
+                    Booking
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Grounds</a></li>
-                    <li><a class="dropdown-item" href="#">Umpires</a></li>
-                    <li><a class="dropdown-item" href="#">Scorer</a></li>
+                    <li><a class="dropdown-item" href="index.html#services"><i class="fa-solid fa-flag me-2 text-warning"></i>Grounds</a></li>
+                    <li><a class="dropdown-item" href="index.html#services"><i class="fa-solid fa-user-shield me-2 text-primary"></i>Umpires</a></li>
+                    <li><a class="dropdown-item" href="index.html#services"><i class="fa-solid fa-pen-to-square me-2 text-success"></i>Scorer</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a class="nav-link" href="index.html#teams">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Teams</a>
+                  <a class="nav-link" href="index.html#teams">Teams</a>
                 </li>
-                <button type="button" class="button">
-                  Get Started
-                </button>
+                <a href="index.html#services" class="button">
+                  <i class="fa-solid fa-bolt me-1"></i> Get Started
+                </a>
               </ul>
-              
             </div>
           </div>
         </nav>
       </section>
 
-      <!-- header -->
+      <!-- Breadcrumb Header -->
       <header class="head1">
-        <p class="head2"> <b style="color: orange;">Home</b> / <b style="color: orange;">Teams</b>   / Teams Details</p>
+        <div class="head-container">
+          <p class="head2">
+            <a href="index.html">Home</a> / <a href="index.html#teams">Teams</a> / <span>Team Details</span>
+          </p>
+          <a href="index.html#teams" class="back-home-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back to Teams
+          </a>
+        </div>
       </header>
 
-      <!-- section1 -->
+      <!-- Team Details Section -->
       <section class="section1">
-      <table class="tab1">
-        
-        <tr>
-          <th rowspan="3"><img src="./Assets/images/images (3).jpeg" alt="SLCB" class="img1"></th>
-          </tr>
-        
-          <tr >
-            <th class="tab2" >
-            <h4>SriLanka National Cricket Team</h4>
-            <hr class="line3">
-              <ul style="color: rgb(37, 37, 122);">
-                <li>Coach: Chris Silverwood</li>
-                <li>Captain: Dasun Shanaka</li>
-                <li>Nickname: The Lions</li>
-                <li>League: International Cricket Council</li>
-               </ul>
-          </th>
-        </tr>
+        <div class="team-card-wrapper reveal-up is-visible">
+          <!-- Left: Team Logo with Float Animation -->
+          <div class="team-logo-col">
+            <img src="./Assets/images/images (3).jpeg" alt="Sri Lanka Cricket Board Logo" class="team-logo-img">
+          </div>
 
-         <tr >
-          <td class="tab3">
-            <h2>Srilanka National Cricket <br>Players Name</h2>
-            <p style="color: rgb(9, 60, 105);"> 	Dimuth Karunaratne, Arjuna Ranatunga, Angelo Mathews, Dinesh Chandimal<br>Dilruwan Perera, Lahiru Gamage,  Dasun Shanaka,Kusal Perera<br>
-              Dhananjaya de Silva, Lasith Malinga, Mahela Jayawardana, Kumar Sangakara</p>
-          </td>
-        </tr>
+          <!-- Right: Team Information & Squad -->
+          <div class="team-info-col">
+            <div class="team-info-header">
+              <span class="section-tag">ICC Member • Full Nation</span>
+              <h2>Sri Lanka National Cricket Team</h2>
+              
+              <ul class="team-meta-list">
+                <li class="team-meta-item">
+                  <div class="team-meta-icon"><i class="fa-solid fa-clipboard-user"></i></div>
+                  <div class="team-meta-text">
+                    <span class="team-meta-label">Head Coach</span>
+                    <span class="team-meta-val">Chris Silverwood</span>
+                  </div>
+                </li>
+                <li class="team-meta-item">
+                  <div class="team-meta-icon"><i class="fa-solid fa-crown"></i></div>
+                  <div class="team-meta-text">
+                    <span class="team-meta-label">Captain</span>
+                    <span class="team-meta-val">Dasun Shanaka</span>
+                  </div>
+                </li>
+                <li class="team-meta-item">
+                  <div class="team-meta-icon"><i class="fa-solid fa-shield-cat"></i></div>
+                  <div class="team-meta-text">
+                    <span class="team-meta-label">Nickname</span>
+                    <span class="team-meta-val">The Lions</span>
+                  </div>
+                </li>
+                <li class="team-meta-item">
+                  <div class="team-meta-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                  <div class="team-meta-text">
+                    <span class="team-meta-label">League</span>
+                    <span class="team-meta-val">International Cricket Council</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-      </table>
-    </section>
+            <!-- Squad Roster -->
+            <div class="squad-section">
+              <h3><i class="fa-solid fa-users-rectangle text-warning"></i> National Squad &amp; Legends</h3>
+              <div class="players-pill-wrap">
+                <span class="player-chip">Dimuth Karunaratne</span>
+                <span class="player-chip">Arjuna Ranatunga</span>
+                <span class="player-chip">Angelo Mathews</span>
+                <span class="player-chip">Dinesh Chandimal</span>
+                <span class="player-chip">Dilruwan Perera</span>
+                <span class="player-chip">Lahiru Gamage</span>
+                <span class="player-chip">Dasun Shanaka</span>
+                <span class="player-chip">Kusal Perera</span>
+                <span class="player-chip">Dhananjaya de Silva</span>
+                <span class="player-chip">Lasith Malinga</span>
+                <span class="player-chip">Mahela Jayawardana</span>
+                <span class="player-chip">Kumar Sangakkara</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- HR -->
-    <hr class="line2">
+      <!-- HR -->
+      <hr class="line2">
 
-    <!-- footer -->
-<section class="section7">
-  <div class="grid-container3">
-    <div class="grid-item3"><p>Yarl Cric <br>Old castle Kopay North<br> Kopay <br><b>Phone</b> : 0768646159 <br><b>Email</b> : piranavanpiran2000@gmail.com</p></div>
-    <div class="grid-item3">Useful Links
-      <ul>
-      <li>Batting</li>
-      <li>Bowling</li>
-      <li>Fielding</li>
-      <li>Captain Speech</li>
-      
-    </ul>
-  </div>
-    <div class="grid-item3">Our Services
-      <ul>
-        <li>Book Grounds</li>
-        <li>Umpires</li>
-        <li>Scorer</li>
-        <li>News</li>
-        
-      </ul>
-    </div>  
-    <div class="grid-item3"><p>Our Social Medias<br>We are put every news in our<br>Social media sides</p>
-    <img src="./Assets/images/fb.png" height="80px" width="150px"></div>
-</section>
+      <!-- Footer Section -->
+      <section class="section7">
+        <div class="footer-content-wrap">
+          <div class="grid-container3">
+            <div class="grid-item3">
+              <h4 class="footer-col-title">Yarl Cric</h4>
+              <div class="contact-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Old castle Kopay North<br>Kopay, Jaffna</span>
+              </div>
+              <div class="contact-row">
+                <i class="fa-solid fa-phone"></i>
+                <span><b>Phone</b>: 0768646159</span>
+              </div>
+              <div class="contact-row">
+                <i class="fa-solid fa-envelope"></i>
+                <span><b>Email</b>: piranavanpiran2000@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="grid-item3">
+              <h4 class="footer-col-title">Useful Links</h4>
+              <ul>
+                <li>Batting</li>
+                <li>Bowling</li>
+                <li>Fielding</li>
+                <li>Captain Speech</li>
+              </ul>
+            </div>
+
+            <div class="grid-item3">
+              <h4 class="footer-col-title">Our Services</h4>
+              <ul>
+                <li>Book Grounds</li>
+                <li>Umpires</li>
+                <li>Scorer</li>
+                <li>News</li>
+              </ul>
+            </div>  
+
+            <div class="grid-item3">
+              <h4 class="footer-col-title">Our Social Medias</h4>
+              <p>We are put every news in our<br>Social media sides</p>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-img-link">
+                <img src="./Assets/images/fb.png" alt="Facebook">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright Bar -->
+      <footer>
+        <ul type="none" class="foot">
+          <li>©Copyrights<b>@yarlcric</b></li>
+          <li class="lik2">Designed by:<b>@Piran_avan</b></li>
+          <li class="lik">
+            <button type="button" class="scroll-up-btn" id="scrollTopFooter" title="Back to top" aria-label="Back to top">
+              <img src="./Assets/images/uper-removebg-preview.png" alt="uper">
+            </button>
+          </li>
+        </ul>
+      </footer>
+
+      <script>
+        const footerScrollBtn = document.getElementById('scrollTopFooter');
+        if (footerScrollBtn) {
+          footerScrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+      </script>
 </body>
-<!-- section9 -->
-<footer><ul type="none" class="foot"><li style="font-weight: 180;">©Copyrights<b>@yarlcric</b></li>
-  <li class="lik2" style="font-weight: 180;">Designed by:<b>@Piran_avan</b></li>
-  <li class="lik" ><img src="./Assets/images/uper-removebg-preview.png" height="30px" width="40px" alt="uper"></li>
-
-</ul>
-</footer>
-</fieldset>
 </html>
